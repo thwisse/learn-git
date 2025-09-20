@@ -1,3 +1,5 @@
+buradaki notlarimi derleyip daha okunakli hale getirdigim medium makalesi: https://thwisse.medium.com/git-temel-kavramlar-ve-komutlar-195f25f52e2c
+
 ### NOTLAR
 
 - vcs ille de yazilim icin kullanilacak diye bir kural yok. versiyonlanmasi, duzgun takip edilmesi, birden fazla kisinin calismasi gereken vs. sebeplerle her dijital belge icin kullanilabilir.
