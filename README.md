@@ -3,14 +3,14 @@
 - vcs ille de yazilim icin kullanilacak diye bir kural yok. versiyonlanmasi, duzgun takip edilmesi, birden fazla kisinin calismasi gereken vs. sebeplerle her dijital belge icin kullanilabilir.
 - main (yani master) de bir branch'tir. `--branch main` mesela bu git clone ile ayni isi yapar.
 - 1- localdeki calisilan alan,  2- staging area, 3- commit local repo, 4- push and remote area
-	- ![[Pasted image 20250919163432.png]]
+	- <img src="./assets/Pasted image 20250919163432.png">
 - origin = uzaktaki (remote) sunucu. yani ornegin githubdaki repo linki. (tariyicidaki link degil tabii git linki demek istedim)
 - genelde buyuk sirketlerde main branch kilitli olur. calisanlarin da kendi branchleri olur. istesen de ana projeye zarar veremezsin.
 - HEAD: o an uzerinde calisilan dalin en son commitini isaret eden gostergedir. genelde son atilan commiti isaret eder. bazen o an bagli oldugun aciktaki branch'i isaret ediyor da olabilir.
 - never merge alone. conflict'leri diger developerlarla birlikte coz.
 - branch degistirecegin zaman bir aliskanlik olarak hep fetch-pull yapmak iyidir.
 - fork ile clone farkli seyler. 
-	- ![](./assets/Pasted image 20250919164939.png)
+	- <img src="./assets/Pasted image 20250919164939.png">
 
 ### KOMUTLAR
 
@@ -42,7 +42,7 @@
 	- git yapisi anlik durum
 - `git status -s` veya `git status --short`
 	- kisa git yapisi durumu.
-	- ![](./assets/Pasted image 20250920004615.png)
+	- <img src="./assets/Pasted image 20250920004615.png">
 - `git add`
 	- dosyalari staging area'ya alma isi. degisiklikleri hazirlamak.
 	- staging area'yi market sepeti gibi dusun.
@@ -66,7 +66,7 @@
 	- untracked yani takip edilmeyen dosyalar bunda gozukmez.
 - `git diff --stat`
 	- hazirlanmamis olan degisikliklerinin kac dosya, kac satir vs oldugunu soyleyen istatislik.
-	- ![](./assets/Pasted image 20250918144556.png)
+	- <img src="./assets/Pasted image 20250918144556.png">
 - `git diff --staged`
 	- stage edilmis degisikleri gormek. add islemi yapildiktan sonraki degisikleri gosterir.
 - `git commit -m "mesaj"`
@@ -74,7 +74,7 @@
 	- commit islemi ve commit mesaji. sadece staging area'ya alinan degisikler commit edilebilir. untracked degisiklikler izlenmedigi gibi commit de edilemez.
 	- farkli islemler icin farkli commitler ve mesajlar at. farkli islemleri ayni commitle ve mesajla atma. silme, ekleme, degistirme vs. detayli bilgi ver.
 	- belli bir commit yapisi kullan. ornegin mesajin basina delete, add, modified vs. keyword girebilirsin. bu yapilara atomic commit denir. bi zaman sonra bunu detayli ogren.
-	- ![](./assets/Pasted image 20250918151718.png)
+	- <img src="./assets/Pasted image 20250918151718.png">
 	- bu henuz push (publish) edilmemis halidir. yani uzak sunucuya gonderilmedi sadece localde commit edildi yani gonderilmeye haphazir.
 - `git commit -a - m "mesaj"`
 	- daha once add ile eklenmis bir degisikligi tekrar add yapmadan direkt commit etmek istersen -a ekleyerek direkt hem add hem commit edebiliyorsun. hic takip edilmemis dosyalari add yapmaz ve commitlemez.
@@ -122,7 +122,7 @@
 - `git fetch`
 	- origindeki degisikleri gor. degisikleri local'e almaz, birlestirme yapmaz. sadece fark etmeni saglar.
 	- o an bulundugun projedeki tum degisiklikleri guncelleyecektir.
-	- ![](./assets/Pasted image 20250919125022.png)
+	- <img src="./assets/Pasted image 20250919125022.png">
 	- conflict riski varsa, veya pull etmeden sadece degisiklik var mi bilmek istersen, degisikleri gormek istersen falan fetch kullanilir. eger her turlu pull edeceksen bile onceden fetch edip kontrol saglayip sonra pull edebilirsin.
 - `git pull origin master`
 	- origindeki degisiklikleri cek.
@@ -135,7 +135,7 @@
 	- branch silme
 - `git push origin --delete yeni_branch`
 	- origindeki branchi silme
-	- ![](./assets/Pasted image 20250919130023.png)
+	- <img src="./assets/Pasted image 20250919130023.png">
 - `git merge baska_branch_adi`
 	- istenilen baska branch ile icinde bulundugun branch birlestirilir.
 - `git log`
